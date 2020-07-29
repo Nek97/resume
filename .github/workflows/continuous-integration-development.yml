@@ -4,7 +4,7 @@ on:
   create:
     tags:
       - 'v*'
-env:
+with:
   CI:
     false
 
