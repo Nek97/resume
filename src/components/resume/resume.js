@@ -43,7 +43,7 @@ export default class Resume extends Component {
               <div className="twelve columns">
                 <h3>Red Square Team</h3>
                 <p className="info">Senior Developer <span>•</span> <em className="date">January 2019 - Present</em></p>
-                <p>
+                <p className="break-word">
                     The R.S.T. is a team of freelancers who work together to manage multiple projects of various entities at the same time, each has its main area of ​​work, but at the same time everyone can do everything.
                     Specifically, I deal with the development of the frontend with the creation of styles and all the graphic and functional elements, subsequently I connect everything with the server if it has already been created by my colleagues, but in the case of smaller projects I also take care of the server and the database.
                 </p>
@@ -53,7 +53,7 @@ export default class Resume extends Component {
               <div className="twelve columns">
                 <h3>Proxt s.a.s.</h3>
                 <p className="info">Head Developer <span>•</span> <em className="date">March 2017 - October 2018</em></p>
-                <p>
+                <p className="break-word">
                     Proxt s.a.s. is a small local company that had set itself the goal of digitizing Italian stores to expand the online market and the possibility of meeting and booking professionals of all kinds through the Joomap app.
                     My assumption made this possible, initially, the app was developed using ionic 1, finished the first version I rewrote the app in ionic 3 adding all the functionality necessary for publication.
                 </p>
@@ -63,7 +63,7 @@ export default class Resume extends Component {
               <div className="twelve columns">
                 <h3>Website Developer</h3>
                 <p className="info">Freelancer <span>•</span> <em className="date">January 2011 - Febraury 2017</em></p>
-                <p>
+                <p className="break-word">
                     At the age of 14, I started making websites using html, php, js and css, until then I had dedicated myself to cms.
                     Gradually I got more and more interesting projects and bigger and bigger challenges that led me to love more and more the world of programming, until the day I received my first contract as a programmer as an intern in a company, and thanks to my previous career I was immediately qualified as a senior developer, my skills of self-management and team management have allowed me to almost always have a role as a project manager in team work
                 </p>

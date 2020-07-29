@@ -4,10 +4,10 @@ export default class Header extends Component {
     return (
       <React.Fragment>
       <header id="home">
-        <nav id="nav-wrap">
+        <nav id="nav-wrap" className="no-print">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
           <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-          <ul id="nav" className="nav">
+          <ul id="nav" className="nav no-print">
             <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
             <li><a className="smoothscroll" href="#about">About</a></li>
             <li><a className="smoothscroll" href="#resume">Resume</a></li>
@@ -22,7 +22,7 @@ export default class Header extends Component {
               effective websites and web applications for companies of all sizes around the globe. Let's <a className="smoothscroll" href="#about">start scrolling </a>
                and learn more <a className="smoothscroll" href="#about">about me</a> in mine <span>ReactJS</span> based resume.</h3>
             <hr />
-            <ul className="social">
+            <ul className="social no-print">
               <li><a href="https://www.facebook.com/nello1997"><i className="fa fa-facebook" /></a></li>
               <li><a href="https://wa.me/+393457086780"><i className="fa fa-whatsapp" /></a></li>
               <li><a href="https://github.com/Nek97"><i className="fa fa-github" /></a></li>
@@ -31,7 +31,7 @@ export default class Header extends Component {
             </ul>
           </div>
         </div>
-        <p className="scrolldown">
+        <p className="scrolldown no-print">
           <a className="smoothscroll" href="#about"><i className="icon-down-circle" /></a>
         </p>
       </header>
