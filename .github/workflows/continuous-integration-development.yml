@@ -5,7 +5,8 @@ on:
     tags:
       - 'v*'
 env:
-  CI: false
+  CI:
+    false
 
 jobs:
   deploy:
