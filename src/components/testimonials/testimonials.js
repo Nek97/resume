@@ -16,7 +16,7 @@ export default class Testimonials extends Component {
                     <blockquote>
                       <p>Aniello has extreme knowledge of UI developing and a very fast learning curve of new technologies
                       </p>
-                      <cite>Joseph Roy</cite>
+                      <cite>Joseph Roy (on Linkedin)</cite>
                     </blockquote>
                   </li> {/* slide ends */}
 

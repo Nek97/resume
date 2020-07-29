@@ -13,15 +13,14 @@ export default class Header extends Component {
             <li><a className="smoothscroll" href="#resume">Resume</a></li>
             <li><a className="smoothscroll" href="#portfolio">Works</a></li>
             <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
           </ul> {/* end #nav */}
         </nav> {/* end #nav-wrap */}
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I'm Aniello Tortora.</h1>
-            <h3>I'm a Italy based <span>web developer</span>, <span>project manager</span> and <span>web designer</span> creating awesome and
+            <h3>I'm an Italy based <span>web developer</span>, <span>project manager</span> and <span>web designer</span> creating awesome and
               effective websites and web applications for companies of all sizes around the globe. Let's <a className="smoothscroll" href="#about">start scrolling </a>
-               and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
+               and learn more <a className="smoothscroll" href="#about">about me</a> in mine <span>ReactJS</span> based resume.</h3>
             <hr />
             <ul className="social">
               <li><a href="https://www.facebook.com/nello1997"><i className="fa fa-facebook" /></a></li>
