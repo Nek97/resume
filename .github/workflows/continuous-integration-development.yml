@@ -6,7 +6,7 @@ on:
       - 'v*'
 env:
   CI: false
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -26,9 +26,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: npm run export
-      - run: cp out/[...dynamic].html out/404.html
-      - run: touch out/.nojekyll
+      - run: npm run deploy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
