@@ -28,6 +28,7 @@ jobs:
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: Nek97/nek97.github.io
         publish_branch: master
