@@ -13,7 +13,7 @@ export default class Portfolio extends Component {
               <div className="columns portfolio-item">
                 <div className="item-wrap">
                   <a href="#modal-01" title>
-                    <img alt="" src="images/portfolio/placeme.jpg" />
+                    <img alt="" src="images/portfolio/placeme.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
                         <h5>PlaceMe</h5>
@@ -27,7 +27,7 @@ export default class Portfolio extends Component {
               <div className="columns portfolio-item">
                 <div className="item-wrap">
                   <a href="#modal-02" title>
-                    <img alt="" src="images/portfolio/ease.jpg" />
+                    <img alt="" src="images/portfolio/ease.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
                         <h5>Ease</h5>
@@ -41,7 +41,7 @@ export default class Portfolio extends Component {
               <div className="columns portfolio-item">
                 <div className="item-wrap">
                   <a href="#modal-03" title>
-                    <img alt="" src="images/portfolio/as.jpg" />
+                    <img alt="" src="images/portfolio/as.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
                         <h5>Azeroth Shard Launcher</h5>
@@ -55,7 +55,7 @@ export default class Portfolio extends Component {
               <div className="columns portfolio-item">
                 <div className="item-wrap">
                   <a href="#modal-04" title>
-                    <img alt="" src="images/portfolio/joomap.jpg" />
+                    <img alt="" src="images/portfolio/joomap.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
                         <h5>Joomap</h5>
