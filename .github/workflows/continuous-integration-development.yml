@@ -4,7 +4,9 @@ on:
   create:
     tags:
       - 'v*'
-
+env:
+  CI: false
+  
 jobs:
   deploy:
     runs-on: ubuntu-18.04
