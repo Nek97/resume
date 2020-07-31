@@ -3,7 +3,7 @@ export default class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-      <footer>
+      <footer className="no-print">
         <div className="row">
           <div className="twelve columns">
             <ul className="social-links no-print">

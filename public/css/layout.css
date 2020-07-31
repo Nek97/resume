@@ -1075,6 +1075,9 @@ footer .social-links li:first-child { margin-left: 0; }
 .break-word{
   word-wrap: break-word;
 }
+.portfolio-item .item-wrap{
+   background-color:#ebeeee;
+}
 @media print {
    .no-print{
       display: none;
@@ -1108,8 +1111,6 @@ footer .social-links li:first-child { margin-left: 0; }
       color: black!important;
    }
    #about{
-      /*margin: 0px!important;
-      padding: 0px!important;*/
       background-color: white!important;
    }
    #about .profile-pic {
@@ -1118,19 +1119,19 @@ footer .social-links li:first-child { margin-left: 0; }
       height: 120px!important;
       border-radius: 100%!important;
    }
-   #portfolio{/*
-      margin: 0px!important;
-      padding: 0px!important;*/
+   #portfolio{
       background-color: white!important;
-   }
-   .row{/*
-      max-width: 94vw!important;
-      width: 94vw!important;*/
    }
    #resume{
       padding: 0px;
    }
    #portfolio{
       padding: 0px;
+   }
+   .portfolio-item .item-wrap{
+      background-color:white;
+   }
+   .no-print-margin{
+      margin: 0px!important;
    }
 }

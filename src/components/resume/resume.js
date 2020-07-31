@@ -95,8 +95,6 @@ export default class Resume extends Component {
                 <li><span className="bar-expand vscode" /><em>VS Code</em></li>
                 <li><span className="bar-expand sql" /><em>SQL Database</em></li>
                 <li><span className="bar-expand jquery" /><em>jQuery</em></li>
-                <li><span className="bar-expand cpp" /><em>Illustrator</em></li>
-                <li><span className="bar-expand ionic" /><em>Wordpress</em></li>
               </ul>
             </div>{/* end skill-bars */}
           </div> {/* main-col end */}
