@@ -1,36 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { AppCtxStore } from "../../App.context"
 export default class Testimonials extends Component {
+  static contextType = AppCtxStore
   render() {
+    var vocabulary = this.context.getVocabulary()
     return (
       <React.Fragment>
       <section id="testimonials" className="no-print">
         <div className="text-container">
           <div className="row">
             <div className="two columns header-col">
-              <h1><span>Client Testimonials</span></h1>
+              <h1><span>{vocabulary.client_testimonials}</span></h1>
             </div>
             <div className="ten columns flex-container">
               <div className="flexslider">
                 <ul className="slides">
-                  <li>
-                    <blockquote>
-                      <p>Aniello has extreme knowledge of UI developing and a very fast learning curve of new technologies
-                      </p>
-                      <cite>Joseph Roy (on Linkedin)</cite>
-                    </blockquote>
-                  </li> {/* slide ends */}
-
-                  {/*}
-                  <li>
-                    <blockquote>
-                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                      </p>
-                      <cite>Mr. Adobe</cite>
-                    </blockquote>
-                  </li> {/* slide ends */}
-                  
+                {
+                  vocabulary.testimonials_elements.map((e, k)=>(
+                    <li key={"testimonials-"+k}>
+                      <blockquote>
+                        <p>
+                          {e.description}
+                        </p>
+                        <cite>
+                          {e.from}
+                        </cite>
+                      </blockquote>
+                    </li>
+                  ))
+                }
                 </ul>
               </div> {/* div.flexslider ends */}
             </div> {/* div.flex-container ends */}

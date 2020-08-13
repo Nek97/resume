@@ -1,6 +1,6 @@
 import React from "react"
 import autoBind from "react-autobind"
-import { Vocabulary, StringCompletion} from "./components/languages/Vocabulary"
+import { Vocabulary} from "./components/languages/Vocabulary"
 
 /** @instance @type {AppContext} */
 export const AppCtxStore = React.createContext({})
