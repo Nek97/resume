@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
+import ReactStringReplace from "react-string-replace"
+import { Vocabulary, StringCompletion} from "../languages/Vocabulary"
+import { AppCtxStore } from "../../App.context"
 export default class Header extends Component {
+  static contextType = AppCtxStore
+  constructor(props) {
+      super(props);
+  }
   render() {
+    var language = this.context.getVocabulary()
     return (
       <React.Fragment>
       <header id="home">
         <nav id="nav-wrap" className="no-print">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-          <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">{language.show_navigation}</a>
+          <a className="mobile-btn" href="#" title="Hide navigation">{language.hide_navigation}</a>
           <ul id="nav" className="nav no-print">
-            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-            <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li className="current"><a className="smoothscroll" href="#home">{language.home}</a></li>
+            <li><a className="smoothscroll" href="#about">{language.about}</a></li>
+            <li><a className="smoothscroll" href="#resume">{language.resume}</a></li>
+            <li><a className="smoothscroll" href="#portfolio">{language.works}</a></li>
+            <li><a className="smoothscroll" href="#testimonials">{language.testimonials}</a></li>
           </ul> {/* end #nav */}
         </nav> {/* end #nav-wrap */}
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I'm Aniello Tortora.</h1>
-            <h3>I'm an Italy based <span>web developer</span>, <span>project manager</span> and <span>web designer</span> creating awesome and
-              effective websites and web applications for companies of all sizes around the globe. Let's <a className="smoothscroll" href="#about">start scrolling </a>
-               and learn more <a className="smoothscroll" href="#about">about me</a> in mine <span>ReactJS</span> based resume.</h3>
+            <h1 className="responsive-headline">{language.homeTitle}</h1>
+            <h3>
+              {
+                ReactStringReplace(language.homeDescription, /@(\w+)/g, (match, i) => (
+                  <span key={match + i}>{match}</span>
+                ))
+              }
+            </h3>
             <hr />
             <ul className="social no-print">
               <li><a href="https://www.facebook.com/nello1997"><i className="fa fa-facebook" /></a></li>
