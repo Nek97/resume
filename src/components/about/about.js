@@ -38,7 +38,7 @@ export default class About extends Component {
                                 <div className="columns download">
                                     <p>
                                         {/* eslint-disable-next-line*/}
-                                        <a href="cv/Aniello_Tortora-CV.pdf" className="button no-print" download><i className="fa fa-download" />{vocabulary.download_resume}</a>
+                                        <a href={vocabulary.download_resume_link} className="button no-print" download><i className="fa fa-download" />{vocabulary.download_resume}</a>
                                     </p>
                                 </div>
                             </div> {/* end row */}

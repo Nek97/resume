@@ -5,6 +5,7 @@ export default class Header extends Component {
   static contextType = AppCtxStore
   render() {
     var vocabulary = this.context.getVocabulary()
+    var languages = this.context.getLanguages()
     return (
       <React.Fragment>
       <header id="home">
@@ -24,6 +25,19 @@ export default class Header extends Component {
             <li><a className="smoothscroll" href="#portfolio">{vocabulary.works}</a></li>
             {/* eslint-disable-next-line*/}
             <li><a className="smoothscroll" href="#testimonials">{vocabulary.testimonials}</a></li>
+            <li className="no-print">
+              {/* eslint-disable-next-line*/}
+              <a>
+                <select onChange={(event) => { this.context.setLanguage(event.target.value) }} className="language_select">
+                  {
+                    languages.map((language, k)=>(
+                      <option value={language.language_code} key={"language-" + k} className="language_select">{language.language_info}</option>
+                    ))
+                  }
+                </select>
+              </a>
+            </li>
+
           </ul> {/* end #nav */}
         </nav> {/* end #nav-wrap */}
         <div className="row banner">

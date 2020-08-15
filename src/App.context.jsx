@@ -1,6 +1,6 @@
 import React from "react"
 import autoBind from "react-autobind"
-import { Vocabulary} from "./components/languages/Vocabulary"
+import { Vocabulary, GetLanguages} from "./components/languages/Vocabulary"
 
 /** @instance @type {AppContext} */
 export const AppCtxStore = React.createContext({})
@@ -22,7 +22,8 @@ export default class AppContext extends React.Component {
 
         this.state = {
             languageCode: languageCode,
-            vocabulary: Vocabulary(languageCode)
+            vocabulary: Vocabulary(languageCode),
+            languages: GetLanguages()
         }
     }
 
@@ -30,7 +31,7 @@ export default class AppContext extends React.Component {
      * Actions
      * @param {*} languageCode 
      */
-    async setUser(languageCode) {
+    async setLanguage(languageCode) {
         await this.setState({
             languageCode: languageCode,
             vocabulary: Vocabulary(languageCode)
@@ -44,6 +45,10 @@ export default class AppContext extends React.Component {
 
     getVocabulary() {
         return this.state.vocabulary ? this.state.vocabulary : Vocabulary('en_GB');
+    }
+
+    getLanguages() {
+        return this.state.languages ? this.state.languages : null
     }
 
     render() {
