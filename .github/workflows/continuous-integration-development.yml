@@ -31,5 +31,5 @@ jobs:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: Nek97/nek97.github.io
-        publish_branch: Development
+        publish_branch: master
         publish_dir: ./build

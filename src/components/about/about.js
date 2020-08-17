@@ -32,6 +32,7 @@ export default class About extends Component {
                                     <p className="address">
                                         <span>Aniello Tortora</span><br />
                                         <span>Nocera Inferiore, SA 84014 IT</span><br />
+                                        <span>tortora.aniello.ta@gmail.com</span><br />
                                         <span>+39 3457086780</span><br />
                                     </p>
                                 </div>
