@@ -16,9 +16,9 @@
     "education": "Educazione",
     "education_elements": [
         {
-            "name": "Università degli studi di Salerno",
-            "state": "Laureando in Informatica",
-            "date": "Aprile 2022"
+            "name": "42 Piscine",
+            "state": "2ndo posto",
+            "date": "Ottobre 2020"
         },
         {
             "name": "Red Square Team",
@@ -33,6 +33,20 @@
     ],
     "work": "Lavoro",
     "work_elements": [
+        {
+            "name": "Bitvavo",
+            "role": "Backend developer",
+            "date_start": "Gennaio 2021",
+            "date_to": "Agosto 2022",
+            "description": "Come sviluppatore back-end per Bitvavo ho sviluppato principalmente il pannello di amministrazione per il team di supporto, oltre alla creazione e il mantenimento di molte funzionalità anche di altri progetti. I miei compiti principali erano la creazione di un sistema di autorizzazione RBAC multilivello, la creazione di endpoint.Le principali tecnologie utilizzate per il progetto sono NestJs, Lambda, Typescript, Javascript, Npm, Graphql, Rest, Mysql,Azioni Typeorm, Aws, Docker, K8s, Github"
+        },
+        {
+            "name": "3D0 - Tecneco",
+            "role": "Full Stack Developer",
+            "date_start": "Settembre 2020",
+            "date_to": "Ottobre 2020",
+            "description": "I miei compiti principali durante lo sviluppo dell'e-commerce Tecneco includono l'analisi, il refactoring e lo sviluppo front-end e back-end. Per il backend ho provveduto a creare un modulo per i cms proprietari utilizzando PHP 7, ho creato anche la dashboard che permette la visualizzazione e la gestione dei dati. Le principali tecnologie utilizzate per il progetto sono Angular 9, Typescript, Npm, Php 7, AJAX, Rest, Mysql, Angular, Material Design e CSS 3"
+        },
         {
             "name": "Red Square Team",
             "role": "Senior Developer",

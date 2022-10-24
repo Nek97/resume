@@ -18,9 +18,9 @@
     "education": "Education",
     "education_elements": [
         {
-            "name": "University of Salerno",
-            "state": "Undergraduate in Computer Science",
-            "date": "April 2022"
+            "name": "42 Piscine",
+            "state": "2nd place",
+            "date": "October 2020"
         },
         {
             "name": "Red Square Team",
@@ -35,6 +35,20 @@
     ],
     "work": "work",
     "work_elements": [
+        {
+            "name": "Bitvavo",
+            "role": "Backend developer",
+            "date_start": "January 2021",
+            "date_to": "August 2022",
+            "description": "As a backend developer for Bitvavo, I mainly developed the administration panel for the support team, as well as the creation and maintenance of many features of other projects as well. My main tasks were the creation of a multilevel RBAC authorization system, the creation of endpoints. The main technologies used for the project are NestJs, Lambda, Typescript, Javascript, Npm, Graphql, Rest, Mysql, Typeorm, Aws, Docker, K8s, Github Actions"
+        },
+        {
+            "name": "3D0 - Tecneco",
+            "role": "Full Stack Developer",
+            "date_start": "September 2020",
+            "date_to": "October 2020",
+            "description": "My main tasks during Tecneco e-commerce development include analysis, refactoring, and front-end and backend development. For the backend I proceeded to create a module for proprietary cms using PHP 7, I also created the dashboard that allows the visualization and management of the data. The main technologies used for the project are Angular 9, Typescript, Npm, Php 7, AJAX, Rest, Mysql, Angular, Material Design, and CSS 3"
+        },
         {
             "name": "Red Square Team",
             "role": "Senior Developer",
